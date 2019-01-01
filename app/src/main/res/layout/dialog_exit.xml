@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground"
+    >
+    <!-- When the user presses the Bel RSR nu button, this layout will appear on the screen in the alertdialog-->
+
+    <!-- Part of Annuleren desing on toolbar-->
+    <LinearLayout
+        android:padding="5dp"
+        android:background="#c7ff3333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/dismiss_Popup"
+        android:gravity="left|center">
+        <ImageView
+            android:id="@+id/cancel_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/main_btn_close"
+            />
+        <TextView
+            android:paddingLeft="5dp"
+            android:text="Çıkış Yap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:fontFamily="monospace"
+            android:textSize="13sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+    <!-- Dialog content design-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="#c7ff3333">
+
+
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/text_Belkosten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Çıkmak istediğinizden emin misiniz?"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+            android:textColor="@android:color/black"
+            android:paddingLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:id="@+id/button_Exit"
+            android:text="Evet"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

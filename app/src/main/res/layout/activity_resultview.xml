@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#c7ff3333"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Resultview">
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="0.5">
+    <TextView
+        android:textColor="#000"
+        android:layout_weight="0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="OYUN BİTTİ"
+        android:textSize="45sp"
+        />
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/tv_LastScore"
+        android:layout_weight="0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="150"
+        android:textSize="50sp"
+        />
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/tv_HighScore"
+        android:layout_weight="0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Yüksek Skor : 13"
+        android:textSize="30sp"
+         />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+        <ImageView
+            android:layout_weight="0.5"
+            android:id="@+id/btn_PlayAgain"
+            android:onClick="playAgain"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/btn_playagain"/>
+
+
+        <ImageView
+            android:layout_weight="0.5"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:onClick="btnMenu"
+            android:id="@+id/btn_Exit"
+            app:srcCompat="@drawable/btn_mainmenu"/>
+    </LinearLayout>
+
+</LinearLayout>
